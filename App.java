@@ -5,6 +5,8 @@ public class App {
         HoneyBee worker = new Worker();
         HoneyBee drone = new Drone();
 
+
+
         ausgabe(queen.doYourJob());
         ausgabe(worker.doYourJob());
         ausgabe(drone.doYourJob());
@@ -16,6 +18,10 @@ public class App {
         ausgabe(drone.fly());
 
         ausgabe("----------------");
+
+        HoneyBee bird = new Bird();
+        ausgabe(bird.fly());
+        ausgabe(bird.doYourJob());
 
 
     }
