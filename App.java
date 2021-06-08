@@ -17,10 +17,6 @@ public class App {
 
         ausgabe("----------------");
 
-        // Das sollte eigentlich nicht möglich sein
-	    // --> Lösung: Abstrakte Klasse 
-        HoneyBee bee = new HoneyBee();
-        ausgabe(bee.doYourJob());
 
     }
 
