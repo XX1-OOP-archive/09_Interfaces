@@ -5,17 +5,9 @@ public class App {
         HoneyBee worker = new Worker();
         HoneyBee drone = new Drone();
 
-
-
         ausgabe(queen.doYourJob());
         ausgabe(worker.doYourJob());
         ausgabe(drone.doYourJob());
-
-        ausgabe("----------------");
-
-        ausgabe(queen.fly());
-        ausgabe(worker.fly());
-        ausgabe(drone.fly());
 
         ausgabe("----------------");
 
@@ -23,7 +15,17 @@ public class App {
         ausgabe(bird.fly());
         ausgabe(bird.hasFeathers());
 
+        ausgabe("--- Fliegerei ----");
 
+        flyingCompetition(queen);
+        flyingCompetition(worker);
+        flyingCompetition(drone);
+        flyingCompetition(bird);
+
+    }
+
+    private static void flyingCompetition(Flyable obj) {
+        ausgabe(obj.fly());
     }
 
     private static void ausgabe(String outStr){
