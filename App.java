@@ -19,9 +19,9 @@ public class App {
 
         ausgabe("----------------");
 
-        HoneyBee bird = new Bird();
+        Bird bird = new Bird();
         ausgabe(bird.fly());
-        ausgabe(bird.doYourJob());
+        ausgabe(bird.hasFeathers());
 
 
     }
